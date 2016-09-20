@@ -10,7 +10,7 @@ export class CarrierRepositoryService {
 
   getAll() {
     return this._$http
-      .get('/api/carriers.json')
+      .get('api/carriers.json')
       .then((response) => response.data);
   }
 
