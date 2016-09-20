@@ -5,9 +5,9 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    'main': './client/app/main.js',
-    'vendor': './client/app/vendor.js',
-    'style': './client/app/style.js',
+    'main': './app/main.js',
+    'vendor': './app/vendor.js',
+    'style': './app/style.js',
   },
 
   output: {
@@ -16,6 +16,8 @@ module.exports = {
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
   },
+
+  context: path.join(__dirname, 'client'),
 
   resolve: {
     root: [ path.join(__dirname, 'client') ],
