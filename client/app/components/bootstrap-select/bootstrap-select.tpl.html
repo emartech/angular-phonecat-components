@@ -1,0 +1,13 @@
+<div class="btn-group" ng-class="{ open: $ctrl.isOpened }">
+    <button type="button" class="btn btn-default dropdown-toggle" ng-click="$ctrl.toggle()">
+        {{ $ctrl.displaySelectedOption() }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a ng-click="$ctrl.select()">Select all</a></li>
+        <li ng-repeat="option in $ctrl.options">
+            <a ng-click="$ctrl.select(option)">
+                {{ option }}
+            </a>
+        </li>
+    </ul>
+</div>

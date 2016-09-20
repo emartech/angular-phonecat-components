@@ -1,0 +1,51 @@
+{
+  "name": "angular-phonecat-components",
+  "version": "1.0.0",
+  "description": "Component based AngularJS application example (Phonecat) in modern Javascript with Webpack",
+  "main": "client/app/main.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js --colors --progress",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack-dev-server --progress --display-error-details"
+  },
+  "contributors": [
+    "Gábor Soós <soos.gabor86@gmail.com> (https://github.com/blacksonic)",
+    "András Fincza <andras.fincza@emarsys.com> (https://github.com/drawain)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emartech/angular-phonecat-components.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "components",
+    "javascript",
+    "webpack",
+    "babel"
+  ],
+  "devDependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "babel-core": "6.14.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-latest": "6.14.0",
+    "bootstrap": "3.3.7",
+    "copy-webpack-plugin": "3.0.1",
+    "core-js": "2.4.1",
+    "css-loader": "0.25.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.9.0",
+    "font-awesome": "4.6.3",
+    "gh-pages": "0.11.0",
+    "html-loader": "0.4.4",
+    "http-server": "0.9.0",
+    "raw-loader": "0.5.1",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "webpack-merge": "0.14.1"
+  },
+  "dependencies": {}
+}

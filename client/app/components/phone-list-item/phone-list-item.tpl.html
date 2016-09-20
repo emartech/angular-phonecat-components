@@ -1,0 +1,11 @@
+<div class="thumbnail">
+    <a class="thumbnail-image" ng-href="#/phone/{{ $ctrl.phone.id }}">
+        <img class="img-responsive" ng-src="{{ $ctrl.phone.imageUrl }}" alt="">
+    </a>
+    <div class="caption" style="height: 180px">
+        <a ng-href="#/phone/{{ $ctrl.phone.id }}">
+            <h3>{{ $ctrl.phone.name }}</h3>
+        </a>
+        <p>{{ $ctrl.phone.snippet | shortDescription }}</p>
+    </div>
+</div>
