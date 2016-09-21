@@ -33,3 +33,11 @@ a[ng-click]{
     padding: 15px;
     max-width: 100%;
 }
+
+.github-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 3000;
+}
