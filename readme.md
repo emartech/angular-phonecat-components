@@ -1,4 +1,5 @@
 # Angular Phonecat Components
+[![devDependency Status](https://david-dm.org/emartech/angular-phonecat-components/dev-status.svg)](https://david-dm.org/emartech/angular-phonecat-components?type=dev)
 
 Component based AngularJS application example (Phonecat) in modern Javascript with Webpack.
 
