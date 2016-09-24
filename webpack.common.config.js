@@ -18,11 +18,11 @@ module.exports = {
     chunkFilename: '[id].chunk.js'
   },
 
-  context: path.join(__dirname, 'client'),
+  context: path.join(process.cwd(), 'src'),
 
   resolve: {
-    root: [ path.join(__dirname, 'client') ],
-    extensions: ['', '.js']
+    root: [ path.join(process.cwd(), 'src') ],
+    extensions: ['', '.ts', '.js', '.json']
   },
 
   plugins: [
@@ -31,13 +31,6 @@ module.exports = {
     new ExtractTextPlugin('style.bundle.css'),
     new ProgressBarPlugin()
   ],
-
-  stats: {
-    errorDetails: true,
-    colors: true,
-    modules: true,
-    reasons: true
-  },
 
   module: {
     loaders: [
@@ -54,5 +47,21 @@ module.exports = {
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
     ]
+  },
+
+  stats: {
+    errorDetails: true,
+    colors: true,
+    modules: true,
+    reasons: true
+  },
+
+  node: {
+    global: 'window',
+    crypto: 'empty',
+    process: true,
+    module: false,
+    clearImmediate: false,
+    setImmediate: false
   }
 };
